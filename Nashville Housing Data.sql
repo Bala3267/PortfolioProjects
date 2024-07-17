@@ -194,7 +194,7 @@ WHERE LandValue is null or BuildingValue is null or OwnerAddress is null
 
 --- Data Analysis Process
 -----------------------------------------------------------------------------
--- Q1) ‘How is the business condition in terms of profit growth in the last few years?
+-- Q1) â€˜How is the business condition in terms of profit growth in the last few years?
 
 SELECT DATEPART(YEAR,SaleDate) as 'YEAR',
 	   Sum(SalePrice - LandValue - BuildingValue) as Profit
